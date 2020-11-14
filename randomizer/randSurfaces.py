@@ -11,7 +11,7 @@ def surfaces_main(config, data):
                       "worldgen", "configured_surface_builder", "custom")
     for dim, count in biome_counts.items():
         # Use the base file as a basis
-        with open(join(base_dir, f"{dim}-base-surface.json")) as base:
+        with open(join(base_dir, "{}-base-surface.json".format(dim))) as base:
             base_data = load(base)
             for i in range(count):
                 curr = deepcopy(base_data)
@@ -21,6 +21,6 @@ def surfaces_main(config, data):
                 surface_config["top_material"]["Name"] = blocks[0]
                 surface_config["under_material"]["Name"] = blocks[1]
                 surface_config["underwater_material"]["Name"] = blocks[2]
-                with open(join(output_dir, f"{dim}-{i}-surface.json"), 'w') as output:
+                with open(join(output_dir, "{}-{}-surface.json".format(dim, i)), 'w') as output:
                     dump(curr, output, indent=4)
     print("* Random Surface Builders Completed *")

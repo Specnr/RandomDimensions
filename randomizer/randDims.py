@@ -8,7 +8,7 @@ def dims_main(config, data):
     base_dir = join("Base datapack", "dimension")
     output_dir = join(config["output"], "r-dim", "dimension")
     for dim, count in biome_counts.items():
-        with open(join(base_dir, f"r-{dim}.json")) as base:
+        with open(join(base_dir, "r-{}.json".format(dim))) as base:
             base_data = load(base)
             # Set the seed
             base_data["generator"]["seed"] = config["seed"]
@@ -25,8 +25,8 @@ def dims_main(config, data):
                         "temperature": round(r.uniform(-1, 1), 1),
                         "humidity": round(r.uniform(-1, 1), 1)
                     },
-                    "biome": f"minecraft:custom/{dim}-{i}"
+                    "biome": "minecraft:custom/{}-{}".format(dim, i)
                 })
-        with open(join(output_dir, f"r-{dim}.json"), 'w') as output:
+        with open(join(output_dir, "r-{}.json".format(dim)), 'w') as output:
             dump(base_data, output, indent=4)
     print("* Random Dimensions Completed *")

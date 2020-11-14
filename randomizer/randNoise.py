@@ -5,13 +5,14 @@ from randomizer.helper import get_n_random
 
 bad_bois = {"minecraft:gravel", "minecraft:sand", "minecraft:red_sand"}
 
+
 def noise_main(config, data):
     biome_counts = config["random-biome-counts"]
     base_dir = join("Base datapack", "noise_settings")
     output_dir = join(config["output"], "minecraft",
                       "worldgen", "noise_settings", "custom")
     for dim, count in biome_counts.items():
-        with open(join(base_dir, f"{dim}-settings.json")) as base:
+        with open(join(base_dir, "{}-settings.json".format(dim))) as base:
             base_data = load(base)
         base_data["amplified"] = bool(r.randint(0, 1))
         # Randomize Default Block
@@ -25,6 +26,6 @@ def noise_main(config, data):
             base_data["default_fluid"]["Name"] = get_n_random(data["fluids"], 1)[
                 0]
 
-        with open(join(output_dir, f"{dim}-settings.json"), 'w') as output:
+        with open(join(output_dir, "{}-settings.json".format(dim)), 'w') as output:
             dump(base_data, output, indent=4)
     print("* Random Noise Completed *")

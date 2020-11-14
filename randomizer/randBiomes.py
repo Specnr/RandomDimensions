@@ -16,12 +16,13 @@ def biomes_main(config, data):
                       "worldgen", "biome", "custom")
     for dim, count in biome_counts.items():
         # Use the base file as a basis
-        with open(join(base_dir, f"{dim}-base.json")) as base:
+        with open(join(base_dir, "{}-base.json".format(dim))) as base:
             base_data = load(base)
             for i in range(count):
                 curr = deepcopy(base_data)
                 # Define builder
-                curr["surface_builder"] = f"minecraft:custom/{dim}-{i}-surface"
+                curr["surface_builder"] = "minecraft:custom/{}-{}-surface".format(
+                    dim, i)
                 effects = curr["effects"]
                 # Define random colours
                 effects["sky_color"] = random_decimal_colour()
@@ -54,13 +55,13 @@ def biomes_main(config, data):
                     data["spawners"], config["per-mob-cap"])
                 # Add enderman to ensure beatable
                 curr["spawners"]["monster"].append(
-					{
-						"type": "minecraft:enderman",
-						"weight": randint(0, 100),
-						"maxCount": randint(config["per-mob-cap"] // 2, config["per-mob-cap"]),
-						"minCount": randint(0, config["per-mob-cap"] // 2)
-					}
-				)
+                    {
+                        "type": "minecraft:enderman",
+                        "weight": randint(0, 100),
+                        "maxCount": randint(config["per-mob-cap"] // 2, config["per-mob-cap"]),
+                        "minCount": randint(0, config["per-mob-cap"] // 2)
+                    }
+                )
                 # Randomize carvers
                 carvers = get_n_random(
                     data["carvers"], config["random-carvers"][dim])
@@ -83,6 +84,6 @@ def biomes_main(config, data):
                 curr["temp"] = round(uniform(0, 1), 1)
                 curr["scale"] = round(uniform(0.7, 1.7), 1)
 
-                with open(join(output_dir, f"{dim}-{i}.json"), 'w') as output:
+                with open(join(output_dir, "{}-{}.json".format(dim, i)), 'w') as output:
                     dump(curr, output, indent=4)
     print("* Random Biomes Completed *")

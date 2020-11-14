@@ -13,7 +13,7 @@ def main():
     for d in DIRS:
         for filename in os.listdir(d):
             if filename.count(".") != 0:
-                print(f"Removing {filename} from {d}")
+                print("Removing {} from {}".format(filename, d))
                 os.remove(os.path.join(d, filename))
 
 
