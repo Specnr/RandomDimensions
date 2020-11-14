@@ -1,0 +1,48 @@
+{
+  "creature": [
+    "minecraft:fox",
+    "minecraft:rabbit",
+    "minecraft:strider",
+    "minecraft:horse",
+    "minecraft:llama",
+    "minecraft:polar_bear",
+    "minecraft:panda",
+    "minecraft:donkey",
+    "minecraft:cow",
+    "minecraft:wolf",
+    "minecraft:pig",
+    "minecraft:parrot",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "minecraft:chicken",
+    "minecraft:mooshroom"
+  ],
+  "monster": [
+    "minecraft:hoglin",
+    "minecraft:ocelot",
+    "minecraft:zombified_piglin",
+    "minecraft:magma_cube",
+    "minecraft:zombie_villager",
+    "minecraft:drowned",
+    "minecraft:enderman",
+    "minecraft:spider",
+    "minecraft:creeper",
+    "minecraft:stray",
+    "minecraft:husk",
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:piglin",
+    "minecraft:ghast",
+    "minecraft:witch",
+    "minecraft:slime"
+  ],
+  "water_creature": ["minecraft:squid", "minecraft:dolphin"],
+  "ambient": ["minecraft:bat"],
+  "water_ambient": [
+    "minecraft:salmon",
+    "minecraft:cod",
+    "minecraft:pufferfish",
+    "minecraft:tropical_fish"
+  ],
+  "misc": []
+}

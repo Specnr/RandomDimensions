@@ -1,0 +1,47 @@
+{
+  "scale": 0.2,
+  "effects": {
+    "mood_sound": {
+      "sound": "",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "ambient_sound": "",
+    "sky_color": -1,
+    "fog_color": -1,
+    "water_color": -1,
+    "water_fog_color": -1
+  },
+  "surface_builder": "",
+  "carvers": {
+    "air": []
+  },
+  "features": [[], [], [], [], [], [], [], [], [], []],
+  "starts": ["minecraft:fortress"],
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "precipitation": "none",
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "category": "nether",
+  "depth": 0.1
+}

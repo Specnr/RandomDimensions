@@ -1,0 +1,70 @@
+{
+  "surface_builder": "",
+  "depth": 0.125,
+  "scale": 0.2,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "precipitation": "rain",
+  "category": "forest",
+  "player_spawn_friendly": true,
+  "effects": {
+    "mood_sound": {
+      "sound": "",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "ambient_sound": "",
+    "sky_color": -1,
+    "fog_color": -1,
+    "water_color": -1,
+    "water_fog_color": -1
+  },
+  "starts": ["minecraft:stronghold"],
+  "spawners": {
+    "creature": [],
+    "monster": [],
+    "water_creature": [],
+    "ambient": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    ["minecraft:lake_water", "minecraft:lake_lava"],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite",
+      "minecraft:ore_diorite",
+      "minecraft:ore_andesite",
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis"
+    ],
+    [],
+    [],
+    []
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "seed": -1,
+  "random-biome-counts": {
+    "overworld": 5,
+    "nether": 5,
+    "end": 1
+  },
+  "random-structures": {
+    "overworld": 20,
+    "nether": 10,
+    "end": 8
+  },
+  "random-carvers": {
+    "overworld": 3,
+    "nether": 3,
+    "end": 3
+  },
+  "random-features": {
+    "overworld": [1, 1, 1, 1, 2, 0, 5, 2, 60, 1],
+    "nether": [1, 1, 1, 1, 2, 0, 5, 4, 30, 1],
+    "end": [1, 1, 1, 1, 1, 0, 3, 1, 10, 1]
+  },
+  "particle-chance": 0.1,
+  "per-mob-cap": 10,
+  "remove-falling-blocks": true
+}

@@ -1,0 +1,50 @@
+{
+  "surface_builder": "",
+  "depth": 0.125,
+  "scale": 0.2,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "precipitation": "none",
+  "category": "the_end",
+  "player_spawn_friendly": false,
+  "effects": {
+    "mood_sound": {
+      "sound": "",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "ambient_sound": "",
+    "sky_color": -1,
+    "fog_color": -1,
+    "water_color": -1,
+    "water_fog_color": -1
+  },
+  "starts": [],
+  "spawners": {
+    "creature": [],
+    "monster": [],
+    "water_creature": [],
+    "ambient": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": []
+  },
+  "features": [[], [], [], [], [
+		"minecraft:end_spike",
+		"minecraft:end_gateway"
+	], [], [], [], [], []]
+}

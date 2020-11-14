@@ -1,0 +1,26 @@
+[
+  {
+    "options": {
+      "type": "minecraft:white_ash"
+    },
+    "probability": 0.118093334
+  },
+  {
+    "options": {
+      "type": "minecraft:crimson_spore"
+    },
+    "probability": 0.025
+  },
+  {
+    "options": {
+      "type": "minecraft:ash"
+    },
+    "probability": 0.00625
+  },
+  {
+    "options": {
+      "type": "minecraft:warped_spore"
+    },
+    "probability": 0.01428
+  }
+]
