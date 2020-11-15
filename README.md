@@ -16,3 +16,4 @@ however nothing more than vanilla Minecraft is needed once the pack has been com
 ## Known issues
 
 - Traveling between dimensions is broken in Creative mode, since portal travel is instant
+- Doesn't work with Paper servers for some reason, does work on default ones though
