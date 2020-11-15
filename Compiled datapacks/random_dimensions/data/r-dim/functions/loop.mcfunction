@@ -7,3 +7,5 @@ execute at @a[predicate=r-dim:in_nether] if block ~ ~ ~ nether_portal run functi
 # End travel
 execute at @a[predicate=r-dim:in_overworld] if block ~ ~ ~ minecraft:end_portal run function r-dim:teleport/tele-end
 execute at @a[predicate=r-dim:in_end] if block ~ ~ ~ minecraft:end_portal run function r-dim:teleport/tele-over-end
+execute at @a[predicate=r-dim:in_overworld] if block ~ ~-1 ~ minecraft:end_portal run function r-dim:teleport/tele-end
+execute at @a[predicate=r-dim:in_end] if block ~ ~-1 ~ minecraft:end_portal run function r-dim:teleport/tele-over-end
