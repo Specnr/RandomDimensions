@@ -57,7 +57,7 @@ def biomes_main(config, data):
                 curr["spawners"]["monster"].append(
                     {
                         "type": "minecraft:enderman",
-                        "weight": randint(0, 100),
+                        "weight": randint(50, 100),
                         "maxCount": randint(config["per-mob-cap"] // 2, config["per-mob-cap"]),
                         "minCount": randint(0, config["per-mob-cap"] // 2)
                     }

@@ -26,9 +26,9 @@ def get_random_spawners(spawners, cap):
             new_spawns.append(
                 {
                     "type": curr,
-                    "weight": randint(0, 100),
+                    "weight": randint(50, 100),
                     "maxCount": randint(cap_num // 2, cap_num),
-                    "minCount": randint(0, cap_num // 2)
+                    "minCount": randint(1, cap_num // 2)
                 }
             )
         r_spawns[t] = new_spawns
