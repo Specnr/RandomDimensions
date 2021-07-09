@@ -28,7 +28,7 @@
     "air": []
   },
   "features": [[], [], [], [], [], [], [], [], [], []],
-  "starts": ["minecraft:fortress"],
+  "starts": ["minecraft:fortress", "minecraft:bastion_remnant"],
   "spawners": {
     "monster": [],
     "creature": [],
