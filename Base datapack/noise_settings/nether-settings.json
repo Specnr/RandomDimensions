@@ -98,7 +98,7 @@
     }
   },
   "noise": {
-    "density_factor": 0.0,
+    "density_factor": 0.35,
     "density_offset": 0.019921875,
     "simplex_surface_noise": false,
     "bottom_slide": {
@@ -111,7 +111,7 @@
     "height": 128,
     "sampling": {
       "xz_scale": 1.0,
-      "y_scale": 3.0,
+      "y_scale": 0.9999999814507745,
       "xz_factor": 80.0,
       "y_factor": 60.0
     },
